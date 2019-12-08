@@ -10,4 +10,4 @@ pyspark = "==2.4.4"
 databricks-cli = "==0.9.1"
 
 [requires]
-python_version = "3.7"
+python_version = "3.7.3"
