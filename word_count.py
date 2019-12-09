@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession, DataFrame
-from pyspark.sql.types import StructType, StructField, StringType
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 
 
 def word_count(input: str):
@@ -14,8 +14,6 @@ def word_count(input: str):
     2. Order by count
     3. Rename count to sum
     """
-
-    word_count.show()
 
 
 if __name__ == '__main__':
