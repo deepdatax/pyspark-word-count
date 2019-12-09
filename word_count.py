@@ -4,8 +4,10 @@ from pyspark.sql.types import StructType, StructField, StringType
 
 def word_count(input: str):
     spark = SparkSession.builder.appName("word_count").getOrCreate()
-    schema = StructType([StructField('text', StringType(), True)])
-    df: DataFrame = spark.createDataFrame([(input,)], schema=schema)
+    schema = StructType([StructField('index', IntegerType(), True),
+                         StructField('text', StringType(), True)
+                         ])
+    df: DataFrame = spark.createDataFrame([(1, input)], schema=schema)
     df.show()
     """
     1. Do word count
