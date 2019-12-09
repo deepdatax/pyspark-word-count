@@ -1,0 +1,7 @@
+{
+  "name": "Spark_set_python",
+  "existing_cluster_id": "${CLUSTER_ID}",
+  "spark_python_task": {
+    "python_file": "dbfs:/path/XXXXXX.py"
+  }
+}
